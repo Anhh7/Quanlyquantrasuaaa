@@ -1,0 +1,268 @@
+/* Thiết lập font chữ chung cho trang */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa; /* Màu nền chung cho trang */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+/* Tiêu đề trang */
+h1 {
+  margin: 0;
+}
+
+/* Ưu đãi đặc biệt */
+.promo-message {
+  font-style: italic;
+  font-size: 1.2em;
+  color: #f8f9fa; /* Màu chữ cho ưu đãi đặc biệt */
+}
+
+/* Phần tìm kiếm sản phẩm */
+#productSearch {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#searchProduct {
+  margin-right: 10px;
+}
+
+#searchButton {
+  background-color: #3498db;
+  color: #fff;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#searchButton:hover {
+  background-color: #2980b9;
+}
+
+/* Danh sách sản phẩm */
+#productList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.product {
+  width: calc(25% - 20px); /* Thay đổi chiều rộng thành 25% */
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s; /* Hiệu ứng khi di chuột qua sản phẩm */
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product h2 {
+  margin-top: 10px;
+}
+
+/* Kích thước và giá sản phẩm */
+.size {
+  margin: 10px 0;
+}
+
+.size label {
+  margin-right: 10px;
+  display: block;
+}
+
+.size select {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.price-display {
+  font-weight: bold;
+}
+
+/* Số lượng và nút đặt hàng */
+label[for="quantity"] {
+  display: block;
+  margin-top: 10px;
+}
+
+.quantity {
+  width: 50px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.order-btn,
+.review-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.order-btn:hover,
+.review-btn:hover {
+  background-color: #555;
+}
+
+/* Giỏ hàng */
+#cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #4caf50;
+  cursor: pointer;
+  border-radius: 0 0 8px 8px; /* Bo tròn góc dưới */
+}
+
+#cart h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#cartList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#cartList li {
+  margin-bottom: 5px;
+}
+
+#cartSummary {
+  margin-top: 10px;
+}
+
+#cartSummary p {
+  margin: 5px 0;
+}
+
+#totalItems,
+#totalAmount {
+  font-weight: bold;
+}
+
+/* Thanh toán */
+#checkout {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#checkout span {
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+#paymentButton {
+  display: inline-block;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#paymentButton:hover {
+  background-color: #555;
+}
+
+.rating {
+  display: none;
+}
+
+.review-textarea {
+  display: none;
+}
+
+.submit-review-btn {
+  display: none;
+}
+
+.review-thank-you {
+  display: none;
+}
+
+/* Màu chủ đạo cho phần giỏ hàng */
+#cart, #cartSummary, #checkout {
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Màu chữ trong phần giỏ hàng */
+#cart, #cartSummary, #checkout, #totalItems, #totalAmount {
+  color: #495057;
+}
+
+/* Thêm khoảng cách giữa phần ưu đãi và phần tìm kiếm */
+header {
+  margin-bottom: 20px;
+}
+
+/* Phần tìm kiếm sản phẩm */
+#productSearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #f0f0f0; /* Thêm màu nền cho phần tìm kiếm */
+  padding: 10px; /* Thêm padding cho đẹp hơn */
+  border-radius: 8px; /* Thêm bo tròn cho phần tìm kiếm */
+}
+
+#searchProduct {
+  margin-right: 10px;
+  padding: 8px; /* Thêm padding cho ô tìm kiếm */
+  border: 1px solid #ccc; /* Thêm viền cho ô tìm kiếm */
+  border-radius: 4px; /* Thêm bo tròn cho ô tìm kiếm */
+}
+
+#searchButton {
+  padding: 8px 16px; /* Thêm padding cho nút tìm kiếm */
+  background-color: #4CAF50; /* Màu nền cho nút tìm kiếm */
+  color: #fff; /* Màu chữ cho nút tìm kiếm */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#searchButton:hover {
+  background-color: #45a049; /* Màu nền khi di chuột qua nút tìm kiếm */
+}
+

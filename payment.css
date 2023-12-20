@@ -1,0 +1,113 @@
+/* Reset CSS để loại bỏ các kiểu mặc định của trình duyệt */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Thêm phần tùy chỉnh cho các phần tử cụ thể */
+
+/* Phần tiêu đề */
+h2 {
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Các phần input và label */
+label,
+input,
+textarea,
+select {
+    display: block;
+}
+
+/* Hiệu ứng hover cho nút thanh toán */
+#submitOrder:hover {
+    background-color: #45a049;
+}
+
+/* Hiệu ứng màu cho lựa chọn thanh toán */
+#paymentMethod {
+    background-color: #f8f8f8;
+}
+
+/* Hiệu ứng box shadow cho form */
+form {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Trong file payment.css */
+.success-message {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    z-index: 1000;
+    animation: slide-down 0.5s ease-in-out;
+}
+
+@keyframes slide-down {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
