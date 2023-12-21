@@ -1,0 +1,261 @@
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: floralwhite;
+}
+
+header {
+  display: flex;
+  flex-direction: column; /* Sắp xếp thành cột */
+  align-items: center;
+  padding: 10px;
+  background-color: floralwhite; /* Màu nền của header */
+}
+
+
+.logo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%; /* Làm tròn logo */
+}
+
+.nav-buttons a {
+  margin-right: 10px; /* Khoảng cách bên phải giữa các nút */
+}
+
+.nav-buttons {
+  display: flex;
+  margin-top: 10px; /* Khoảng cách giữa ưu đãi và nút */
+  align-self: center; /* Đặt container nút về bên phải */
+  transform: translateY(50%); /* Điều chỉnh vị trí dọc */
+}
+
+/* Phần các nút liên kết */
+.nav-buttons a {
+  margin-right: 10px; /* Khoảng cách giữa các nút */
+  text-decoration: none;
+  color: #333; /* Màu chữ của các nút */
+  font-weight: bold;
+}
+
+/* Hover effect */
+.nav-buttons a:hover {
+  color: #ff6600; /* Màu chữ khi hover */
+}
+
+.promo-message {
+  font-style: italic;
+}
+
+#productSearch {
+  margin: 20px 0;
+  text-align: center;
+}
+
+#searchProduct {
+  padding: 8px;
+}
+
+#searchButton {
+  padding: 8px 15px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Danh sách sản phẩm */
+#productList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.product {
+  width: calc(25% - 20px); /* Thay đổi chiều rộng thành 25% */
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s; /* Hiệu ứng khi di chuột qua sản phẩm */
+}
+
+#productList .product-item {
+  margin-bottom: 20px; /* Khoảng cách dưới giữa các sản phẩm */
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product h2 {
+  margin-top: 10px;
+}
+
+/* styles.css */
+
+.review-textarea {
+  display: none;
+  width: 100%;
+  height: 80px;
+  margin-bottom: 10px;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.submit-review-btn {
+  display: none;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.review-thank-you {
+  display: none;
+  color: #4caf50;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Optional: Style the buttons consistently */
+.order-btn,
+.review-btn {
+  background-color: #008CBA;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+/* Optional: Add hover effect to buttons */
+.order-btn:hover,
+.review-btn:hover,
+.submit-review-btn:hover {
+  background-color: #005580;
+}
+
+
+
+.quantity, .size, .review-textarea {
+  margin: 10px 0;
+  padding: 8px;
+}
+
+.submit-review-btn, .order-btn, .review-btn {
+  padding: 8px 15px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.review-thank-you {
+  display: none;
+  color: green;
+  margin-top: 10px;
+}
+
+#cart {
+  position: fixed;
+  top: 30px;
+  right: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  max-width: 300px;
+  width: 100%;
+}
+
+#cart h2 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+#cartList, #cartSummary {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#cartList li {
+  margin-bottom: 10px;
+}
+
+#cartSummary {
+  margin-top: 10px;
+}
+
+#checkout button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#checkout button:hover {
+  background-color: #45a049;
+}
+
+.cart-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+.cart-item:last-child {
+  border-bottom: none; /* Remove border from the last cart item */
+}
+
+.cart-container {
+  position: fixed;
+  top: 10px; /* Điều chỉnh vị trí từ đỉnh trang web */
+  right: 10px; /* Điều chỉnh vị trí từ mép phải trang web */
+  z-index: 3; /* Đảm bảo giỏ hàng ở trên cùng */
+}
+
+#checkout {
+  margin-top: 10px;
+} 
+
+#paymentButton {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.logo-container {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 3;
+}
+
+
