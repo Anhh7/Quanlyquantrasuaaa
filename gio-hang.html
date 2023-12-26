@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="gio-hang.css">
+  <title>Giỏ hàng</title>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Giỏ hàng</h2>
+    <p>FREE SHIP</p>
+    <table>
+      <thead>
+        <tr>
+          <th>STT</th>
+          <th>Mã sản phẩm</th>
+          <th>Ảnh đại diện</th>
+          <th>Tên sản phẩm</th>
+          <th>Số lượng</th>
+          <th>Đơn giá</th>
+          <th>Thành tiền</th>
+          <th>Hành động</th>
+        </tr>
+      </thead>
+      <tbody id="cart-body">
+        <tr>
+          <td>1</td>
+          <td>F001</td>
+          <td><img src="/code/image/chocolate-duong-den.png" alt="Chocolate Oreo"></td>
+          <td>Chocolate Oreo</td>
+          <td>2</td>
+          <td>22.000 VND</td>
+          <td>44.000 VND</td>
+          <td><button onclick="removeItem(this)">Xóa</button></td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>F002</td>
+            <td><img src="/code/image/matcha-oreo.png" alt=""></td>
+            <td>Matcha Oreo</td>
+            <td>2</td>
+            <td>27.000 VND</td>
+            <td>54.000 VND</td>
+            <td><button onclick="removeItem(this)">Xóa</button></td>
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td>F003</td>
+            <td><img src="/code/image/tra-oi-hong-3q_1.png" alt=""></td>
+            <td>Trà Ổi Hồng</td>
+            <td>1</td>
+            <td>22.000 VND</td>
+            <td>22.000 VND</td>
+            <td><button onclick="removeItem(this)">Xóa</button></td>
+          </tr>
+
+          <tr>
+            <td>4</td>
+            <td>F004</td>
+            <td> <img src="/code/image/tra_dao.png" alt=""></td>
+            <td>Trà Đào</td>
+            <td>5</td>
+            <td>22.000 VND</td>
+            <td>110.000 VND</td>
+            <td><button onclick="removeItem(this)">Xóa</button></td>
+          </tr>
+
+          <tr>
+            <td>5</td>
+            <td>F005</td>
+            <td><img src="/code/image/tra_sua_matcha.png" alt=""></td>
+            <td>Trà Sữa Matcha</td>
+            <td>3</td>
+            <td>27.000 VND</td>
+            <td>81.000 VND</td>
+            <td><button onclick="removeItem(this)">Xóa</button></td>
+          </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="6" style="text-align: right;">Tổng cộng:</td>
+          <td id="total">311.000 VND</td>
+          <td></td>
+        </tr>
+        <tr>
+            <td colspan="8" style="text-align: right;"><a href="payment.html">Thanh toán</a></td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

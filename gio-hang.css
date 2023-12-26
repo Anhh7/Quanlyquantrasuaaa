@@ -1,0 +1,80 @@
+/* Gio hàng CSS */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  p {
+    color: #27ae60;
+    font-weight: bold;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  td {
+    position: relative;
+  }
+  
+  td img {
+    max-width: 50px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  td button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px; /* Tùy chỉnh kích thước nút */
+    cursor: pointer;
+    border-radius: 5px; /* Bo tròn góc */
+    font-size: 16px; /* Kích thước chữ */
+  }
+  
+  td button:hover {
+    background-color: #c0392b; /* Màu nền khi rê chuột vào */
+  }
+  
+  tfoot {
+    font-weight: bold;
+  }
+  
+  tfoot td {
+    border-top: 2px solid #ddd;
+  }
+  
+  tfoot td#total {
+    color: #e74c3c;
+  }
+  
